@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import localFont from "next/font/local";
 import {
   ClerkProvider,
@@ -40,6 +41,7 @@ export default function RootLayout({
           </ConvexClientProvidor>
           <Footer />
           <Toaster />
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
